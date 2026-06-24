@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="authority_street_fk" directorySegmentName="seg_0" id="C202B75A-2F12-612F-232E-62DE3FB1FFD7">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-25 11:17:48 UTC</createdTime>
+<ownerDesignName>ca_logical</ownerDesignName>
+<engineerTo>
+<item key="A1269F0B-D7E2-660C-A56A-C8A5CEBA407D" value="true"/>
+</engineerTo>
+<sourcePk>D6DF5B32-85E5-CB3D-D579-FA2A06B4B1CD</sourcePk>
+<targetPk>BDFE47DE-4ACF-3EAE-8237-7F0A53DF962E</targetPk>
+<identifying>true</identifying>
+<nameOnSource>manages</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>0CD87DE4-C32F-D865-0DA0-9F3B0723A1F1</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>92B36521-CF10-260B-1F37-304CFC59F7BC</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="truck_collrun_fk" directorySegmentName="seg_0" id="FA2B5E43-FD4E-75CD-C9E2-49D36F754055">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-25 15:34:28 UTC</createdTime>
+<ownerDesignName>ca_logical</ownerDesignName>
+<engineerTo>
+<item key="A1269F0B-D7E2-660C-A56A-C8A5CEBA407D" value="true"/>
+</engineerTo>
+<sourcePk>0E5A97BD-C3B1-B204-57FD-D6D8E3FB86D5</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>works</nameOnSource>
+<nameOnTarget>  </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>B79153FC-C0EC-7E13-0B9C-F22049EBD84A</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>443246C8-2199-9281-E378-0AB330C60B32</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

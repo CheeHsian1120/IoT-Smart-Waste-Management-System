@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B679B668-EF8B-9522-06C9-6FD7E61660E3" name="AUTHORITY">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<generatorID>0CD87DE4-C32F-D865-0DA0-9F3B0723A1F1</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="auth_name" id="91807E59-4E2A-1A04-0310-2634835A2474">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Authority name]]></commentInRDBMS>
+<generatorID>BA1B8C9C-6146-6D47-3698-F0C988521359</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="auth_ceo_gname" id="4753B8D2-DE3C-AD1D-D6F7-3EBE9B470062">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Authority chief executive officer's given name]]></commentInRDBMS>
+<generatorID>3092F674-E880-8FD8-212C-C574B681B6BC</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="auth_ceo_fname" id="0D4BD3C1-1D86-018D-5F57-35F612CAB0DF">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Authority chief executive officer's first name]]></commentInRDBMS>
+<generatorID>AC945619-35B0-6538-7AE3-5E5043B481BC</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="auth_tel_no" id="3DD92A24-761D-D8ED-31D9-D3B6F64E9291">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Authority contact telephone number]]></commentInRDBMS>
+<generatorID>28FC42B8-7873-2D19-E618-3BBEAE027F3D</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="auth_area" id="659F13BA-6DC4-2F71-BA1B-2E82D32D4BFD">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Authorities total area in square kilometers]]></commentInRDBMS>
+<generatorID>BA83B8D0-27DC-2260-FE03-7279AE955BD4</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="auth_type" id="BE466C2D-C8F8-DC4D-1BEA-C5175AD3521D">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Authority type (B=Borough, C=City, D=Distinct Council, S=Shire, T=Town)]]></commentInRDBMS>
+<generatorID>39F94952-9436-FB44-35ED-3A7919BAA092</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<constraintName>auth_type_chk</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="B" description="Borough"/>
+<valueDef value="C" description="City"/>
+<valueDef value="D" description="Distinct Council"/>
+<valueDef value="S" description="Shire"/>
+<valueDef value="T" description="Town"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="06BA2227-41EC-144E-20BE-B278759983D2" name="AUTHORITY_PK">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<generatorID>D6DF5B32-85E5-CB3D-D579-FA2A06B4B1CD</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="91807E59-4E2A-1A04-0310-2634835A2474"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

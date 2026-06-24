@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6E1DBAFA-893D-8708-CECD-A4BF01080A73" name="COLL_RUN">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<generatorID>443246C8-2199-9281-E378-0AB330C60B32</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="collrun_id" id="3AF511D5-CF57-06D4-ED4D-A8D4292F6A39">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<generatorID>54242770-0200-9299-0591-E9D50BE8777B</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="collrun_date" id="928091C6-0507-8CB4-14F8-4BB2C8BEF362">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date of collection]]></commentInRDBMS>
+<generatorID>078D7A7E-C768-CB55-27A0-42AD254C79A2</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="truck_vin" id="E7B84FD1-7E9C-3B68-BD32-AB72AD5B7E56">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Truck Vehicle Idenfication Number, 0-9, A-Z in uppercase exlucde I, O, Q]]></commentInRDBMS>
+<generatorID>4F3007CC-71FF-9B17-B249-F1B08FF221DC</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>17</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="95EC75AF-9B07-E350-E85F-FF256383E3C9" referredColumn="6D6941A4-9129-32B8-E9A3-C2AEFCF664B2"/>
+</associations>
+</Column>
+<Column name="cw_num" id="369A19D1-526B-A216-501A-849648FEE60E">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Contract waste number
+]]></commentInRDBMS>
+<generatorID>08406B79-9848-B61B-1B24-797A7BF702B1</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3269C703-8098-C6C0-8101-914016169BB7" referredColumn="B64B5C0C-F865-5CFC-55C7-E9DB5F10210A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D221399B-EFD3-6ABB-A9B6-44DCAAA98E69" name="COLL_RUN_PK">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<generatorID>8E43337C-94D7-E4BC-E895-33836EF982B0</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3AF511D5-CF57-06D4-ED4D-A8D4292F6A39"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8F5DF7FD-FBE3-28A7-AE85-93BF9BC47CBE" name="COLLRUN_NK">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<generatorID>B2A4FBCA-2513-6B55-C542-2AAFF0D61B5C</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="928091C6-0507-8CB4-14F8-4BB2C8BEF362"/>
+<colUsage columnID="369A19D1-526B-A216-501A-849648FEE60E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AAC7309E-D755-89C0-1916-93E9ECBD7ECD" name="contractwaste_collrun_fk">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<generatorID>22946DDF-671E-F690-B0E9-FA5701CCBB72</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="369A19D1-526B-A216-501A-849648FEE60E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AA7D4749-1B81-E385-148D-CBD154A4C926" name="truck_collrun_fk">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<generatorID>FA2B5E43-FD4E-75CD-C9E2-49D36F754055</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E7B84FD1-7E9C-3B68-BD32-AB72AD5B7E56"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

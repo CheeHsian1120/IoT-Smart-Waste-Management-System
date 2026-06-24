@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="92B36521-CF10-260B-1F37-304CFC59F7BC" name="STREET">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-25 11:00:48 UTC</createdTime>
+<ownerDesignName>ca_logical</ownerDesignName>
+<engineerTo>
+<item key="A1269F0B-D7E2-660C-A56A-C8A5CEBA407D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="auth_name" id="61D93339-E299-A54A-A2A5-7F88CBEEE0FE">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-25 11:17:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Authority name]]></commentInRDBMS>
+<generatorID>C202B75A-2F12-612F-232E-62DE3FB1FFD7</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<engineerTo>
+<item key="A1269F0B-D7E2-660C-A56A-C8A5CEBA407D" value="true"/>
+</engineerTo>
+<referedAttribute>BA1B8C9C-6146-6D47-3698-F0C988521359</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="street_id" id="B7FCFAEE-F0DB-276C-0E27-F76BE6870744">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-25 11:01:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Street ID]]></commentInRDBMS>
+<ownerDesignName>ca_logical</ownerDesignName>
+<engineerTo>
+<item key="A1269F0B-D7E2-660C-A56A-C8A5CEBA407D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="street_name" id="195C4400-03A9-95D7-E6B8-7DEB2416DCF0">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-25 11:05:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Street name]]></commentInRDBMS>
+<ownerDesignName>ca_logical</ownerDesignName>
+<engineerTo>
+<item key="A1269F0B-D7E2-660C-A56A-C8A5CEBA407D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="street_length" id="9D2C8936-5FD1-A70C-9839-0A1586B4ADD0">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-25 11:06:13 UTC</createdTime>
+<commentInRDBMS><![CDATA[Street length in meters]]></commentInRDBMS>
+<ownerDesignName>ca_logical</ownerDesignName>
+<engineerTo>
+<item key="A1269F0B-D7E2-660C-A56A-C8A5CEBA407D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="street_road_type" id="150B0D20-3DC0-BD7A-66AE-3422627BCF24">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-25 11:07:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Street road type (A=Asphalt, C=Concrete, U=Unsealed)]]></commentInRDBMS>
+<ownerDesignName>ca_logical</ownerDesignName>
+<engineerTo>
+<item key="A1269F0B-D7E2-660C-A56A-C8A5CEBA407D" value="true"/>
+</engineerTo>
+<constraintName>street_road_type_chk</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="A" description="Asphalt"/>
+<valueDef value="C" description="Concrete"/>
+<valueDef value="U" description="Unsealed"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="street_lane_num" id="FD3B2112-0EE4-CA83-CFEC-914E5B57CB2E">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-25 11:10:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Street lane numbers]]></commentInRDBMS>
+<ownerDesignName>ca_logical</ownerDesignName>
+<engineerTo>
+<item key="A1269F0B-D7E2-660C-A56A-C8A5CEBA407D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BDFE47DE-4ACF-3EAE-8237-7F0A53DF962E" name="STREET PK">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-25 11:05:59 UTC</createdTime>
+<ownerDesignName>ca_logical</ownerDesignName>
+<engineerTo>
+<item key="A1269F0B-D7E2-660C-A56A-C8A5CEBA407D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B7FCFAEE-F0DB-276C-0E27-F76BE6870744</attributeRef>
+<attributeRef>61D93339-E299-A54A-A2A5-7F88CBEEE0FE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

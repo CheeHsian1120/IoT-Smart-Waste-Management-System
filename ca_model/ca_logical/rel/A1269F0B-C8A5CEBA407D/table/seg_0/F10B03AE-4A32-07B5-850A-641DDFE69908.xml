@@ -1,0 +1,136 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F10B03AE-4A32-07B5-850A-641DDFE69908" name="CONTRACT_WASTE">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<generatorID>4DB93EC8-91B0-2DE3-C6CE-B6C8CD11A944</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cw_num" id="B64B5C0C-F865-5CFC-55C7-E9DB5F10210A">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Contract waste number
+]]></commentInRDBMS>
+<generatorID>03AADB12-8BB5-BCFA-5B1E-6BFE7C1EB5EA</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="contract_num" id="7D02836E-945A-2C74-C55E-1477C86B1259">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Contract number]]></commentInRDBMS>
+<generatorID>531D73DE-E158-C31F-1D01-8F876AF9C968</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="68C37129-F804-3E2B-B694-4E806A379A18" referredColumn="50DC4DDE-69EB-43CC-C1E0-3CD481513222"/>
+</associations>
+</Column>
+<Column name="waste_type_id" id="C177723F-349B-3F94-5DAD-F5D882B60A1E">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Waste type ID]]></commentInRDBMS>
+<generatorID>E1E661F9-18AB-95A1-C4C0-4FE77EA15959</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F55166B0-82A5-3FF4-1034-7355CEF56F06" referredColumn="344D15B4-CA26-2386-081F-C8D693C395FC"/>
+</associations>
+</Column>
+<Column name="cw_collection_cost" id="B343D1CC-5018-F3EC-989B-80BDE8512556">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Collection cost under contract waste]]></commentInRDBMS>
+<generatorID>8DF765A1-1A69-32E5-862E-4ED1479C5CE9</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cw_collection_freq" id="1A06F3C7-9E3C-F745-20C9-2D37F18FA2A7">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Collection frequency under contract waste]]></commentInRDBMS>
+<generatorID>A6B56F87-E929-DCB6-3B13-2E3689BD7610</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="442E9313-DF12-CE58-0496-C6BD92EF68C8" name="CONTRACT_WASTE_PK">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<generatorID>AFFE9347-40DD-1860-E958-C252FD654907</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B64B5C0C-F865-5CFC-55C7-E9DB5F10210A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FF50BABA-D673-0D47-96BC-36E6CDC95DCD" name="CONTRACT_WASTE_NK">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<generatorID>0F0B089C-9A86-FE99-7B32-AEF79C81DCC3</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7D02836E-945A-2C74-C55E-1477C86B1259"/>
+<colUsage columnID="C177723F-349B-3F94-5DAD-F5D882B60A1E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="875BC345-8CB2-544F-DF47-B6E39ABF3DD0" name="contract_contractwaste_fk">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<generatorID>C330909C-BD59-A969-EED6-552A703A87F2</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7D02836E-945A-2C74-C55E-1477C86B1259"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9EAB719D-19EB-8246-EAE8-D866B448D35C" name="wastetype_contractwaste_fk">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<generatorID>050C257C-DFA6-B85F-322E-984034D072D7</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C177723F-349B-3F94-5DAD-F5D882B60A1E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F79249C6-5418-F20B-46AC-8FC01F73AF11" containerWithKeyObject="76D723BB-6BA5-222E-99D6-FF2DB4538129" localFKIndex="5C902249-E803-5C5E-7DF5-1B1F64433A1B" name="bin_collection_fk">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<generatorID>A24F155A-D9D5-4F62-5B4E-A9ED0C66BB48</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<referredTableLongName>BIN</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>94A7B5E3-D0AD-70C4-E4AA-15D22E98BDD3</referredTableID>
+<keyObject>057578B5-F1D1-AA69-C9F1-AFE536C0E3DB</keyObject>
+<referredKeyID>057578B5-F1D1-AA69-C9F1-AFE536C0E3DB</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>bin_rfid</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

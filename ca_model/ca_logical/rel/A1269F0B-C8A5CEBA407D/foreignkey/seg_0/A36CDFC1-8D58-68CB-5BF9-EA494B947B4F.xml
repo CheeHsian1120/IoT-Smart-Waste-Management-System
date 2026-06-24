@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A36CDFC1-8D58-68CB-5BF9-EA494B947B4F" containerWithKeyObject="76D723BB-6BA5-222E-99D6-FF2DB4538129" localFKIndex="69B3566F-03D9-F7BE-C460-7A404DA629F5" name="collrun_collection_fk">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<generatorID>62FC33D3-AAAD-63FF-2E4A-74936452D8FE</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<referredTableLongName>COLL_RUN</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6E1DBAFA-893D-8708-CECD-A4BF01080A73</referredTableID>
+<keyObject>D221399B-EFD3-6ABB-A9B6-44DCAAA98E69</keyObject>
+<referredKeyID>D221399B-EFD3-6ABB-A9B6-44DCAAA98E69</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>collrun_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

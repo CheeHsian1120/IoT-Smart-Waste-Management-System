@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3C0BAC99-16FF-91DB-95A2-2618F8BECA60" name="PROPERTY">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-25 11:12:54 UTC</createdTime>
+<ownerDesignName>ca_logical</ownerDesignName>
+<engineerTo>
+<item key="A1269F0B-D7E2-660C-A56A-C8A5CEBA407D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="auth_name" id="07283B84-5B8E-765F-DF05-041E50618AB6">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-25 11:23:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Authority name]]></commentInRDBMS>
+<generatorID>B877B912-E976-B030-ED7F-74A99E034715</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<engineerTo>
+<item key="A1269F0B-D7E2-660C-A56A-C8A5CEBA407D" value="true"/>
+</engineerTo>
+<referedAttribute>61D93339-E299-A54A-A2A5-7F88CBEEE0FE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="street_id" id="77C44256-F752-9321-DE8C-F7B48FF70D4C">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-25 11:23:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Street ID]]></commentInRDBMS>
+<generatorID>B877B912-E976-B030-ED7F-74A99E034715</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<engineerTo>
+<item key="A1269F0B-D7E2-660C-A56A-C8A5CEBA407D" value="true"/>
+</engineerTo>
+<referedAttribute>B7FCFAEE-F0DB-276C-0E27-F76BE6870744</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prop_street_num" id="5C7DE785-A0A3-A21D-7F2D-699B31528ECB">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-25 11:13:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Property street number]]></commentInRDBMS>
+<ownerDesignName>ca_logical</ownerDesignName>
+<engineerTo>
+<item key="A1269F0B-D7E2-660C-A56A-C8A5CEBA407D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prop_id" id="C7AB2382-8FAE-2994-56D4-A52FC7653676">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-25 11:24:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Act as a surrogate key]]></commentInRDBMS>
+<ownerDesignName>ca_logical</ownerDesignName>
+<engineerTo>
+<item key="A1269F0B-D7E2-660C-A56A-C8A5CEBA407D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D37FF3C3-C969-B23B-8DAE-3373273FFC46" name="PROPERTY PK">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-25 11:16:29 UTC</createdTime>
+<ownerDesignName>ca_logical</ownerDesignName>
+<engineerTo>
+<item key="A1269F0B-D7E2-660C-A56A-C8A5CEBA407D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>C7AB2382-8FAE-2994-56D4-A52FC7653676</newElementsIDs>
+<usedAttributes>
+<attributeRef>C7AB2382-8FAE-2994-56D4-A52FC7653676</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="9770037E-694D-3214-12D6-9941416405B8" name="STREET_PROP_NK">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-25 11:25:47 UTC</createdTime>
+<ownerDesignName>ca_logical</ownerDesignName>
+<engineerTo>
+<item key="A1269F0B-D7E2-660C-A56A-C8A5CEBA407D" value="true"/>
+</engineerTo>
+<newElementsIDs>07283B84-5B8E-765F-DF05-041E50618AB6,77C44256-F752-9321-DE8C-F7B48FF70D4C,5C7DE785-A0A3-A21D-7F2D-699B31528ECB</newElementsIDs>
+<usedAttributes>
+<attributeRef>07283B84-5B8E-765F-DF05-041E50618AB6</attributeRef>
+<attributeRef>77C44256-F752-9321-DE8C-F7B48FF70D4C</attributeRef>
+<attributeRef>5C7DE785-A0A3-A21D-7F2D-699B31528ECB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

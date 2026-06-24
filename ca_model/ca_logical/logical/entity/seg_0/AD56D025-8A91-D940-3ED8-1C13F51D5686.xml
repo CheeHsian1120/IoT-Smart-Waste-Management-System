@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AD56D025-8A91-D940-3ED8-1C13F51D5686" name="CONTRACT">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-25 11:48:18 UTC</createdTime>
+<ownerDesignName>ca_logical</ownerDesignName>
+<engineerTo>
+<item key="A1269F0B-D7E2-660C-A56A-C8A5CEBA407D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="contract_num" id="E5F01D7F-44DF-53EC-29CE-69C3F17C776D">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-25 11:48:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Contract number]]></commentInRDBMS>
+<ownerDesignName>ca_logical</ownerDesignName>
+<engineerTo>
+<item key="A1269F0B-D7E2-660C-A56A-C8A5CEBA407D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="contract_startdate" id="4DC5888B-3312-AABD-81AC-D711D62632D6">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-25 11:49:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Contract start date]]></commentInRDBMS>
+<ownerDesignName>ca_logical</ownerDesignName>
+<engineerTo>
+<item key="A1269F0B-D7E2-660C-A56A-C8A5CEBA407D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="contract_enddate" id="B2A05E5E-C1B6-0BE9-CFDB-E4EA7676467C">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-25 11:49:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Contract end date]]></commentInRDBMS>
+<ownerDesignName>ca_logical</ownerDesignName>
+<engineerTo>
+<item key="A1269F0B-D7E2-660C-A56A-C8A5CEBA407D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="auth_name" id="98BB59A4-DD44-BA49-BAD7-B50955FDB67A">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-25 11:51:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[Authority name]]></commentInRDBMS>
+<generatorID>6FCF7218-2F52-6B7E-666B-929E10CCA1C0</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<engineerTo>
+<item key="A1269F0B-D7E2-660C-A56A-C8A5CEBA407D" value="true"/>
+</engineerTo>
+<referedAttribute>BA1B8C9C-6146-6D47-3698-F0C988521359</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1ACE2F7E-494D-276E-320F-DB5927D4EEC5" name="CONTRACT PK">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-25 11:49:11 UTC</createdTime>
+<ownerDesignName>ca_logical</ownerDesignName>
+<engineerTo>
+<item key="A1269F0B-D7E2-660C-A56A-C8A5CEBA407D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E5F01D7F-44DF-53EC-29CE-69C3F17C776D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

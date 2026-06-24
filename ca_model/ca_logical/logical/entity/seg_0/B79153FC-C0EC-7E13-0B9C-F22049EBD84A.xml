@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B79153FC-C0EC-7E13-0B9C-F22049EBD84A" name="TRUCK">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-25 15:01:03 UTC</createdTime>
+<ownerDesignName>ca_logical</ownerDesignName>
+<engineerTo>
+<item key="A1269F0B-D7E2-660C-A56A-C8A5CEBA407D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="truck_vin" id="95D21FCC-EA31-AA5A-4A31-7D878C877E4B">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-25 15:01:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Truck Vehicle Idenfication Number, 0-9, A-Z in uppercase exlucde I, O, Q]]></commentInRDBMS>
+<ownerDesignName>ca_logical</ownerDesignName>
+<engineerTo>
+<item key="A1269F0B-D7E2-660C-A56A-C8A5CEBA407D" value="true"/>
+</engineerTo>
+<constraintName>truck_vin_chk</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>17</dataTypeSize>
+<ownDataTypeParameters>17,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>9</endValue>
+<description>number</description>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>A</beginValue>
+<endValue>H</endValue>
+<description>letter</description>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>J</beginValue>
+<endValue>N</endValue>
+<description>letter</description>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>P</beginValue>
+<endValue>P</endValue>
+<description>letter</description>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>R</beginValue>
+<endValue>Z</endValue>
+<description>letter</description>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="truck_rego" id="30A23262-C727-34F7-F084-F18F3A176BFB">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-25 15:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Truck custom number plates]]></commentInRDBMS>
+<ownerDesignName>ca_logical</ownerDesignName>
+<engineerTo>
+<item key="A1269F0B-D7E2-660C-A56A-C8A5CEBA407D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="truck_make" id="44BBE25F-5E8C-0AB1-F353-4DB10DA53AA6">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-25 15:13:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[Truck make]]></commentInRDBMS>
+<ownerDesignName>ca_logical</ownerDesignName>
+<engineerTo>
+<item key="A1269F0B-D7E2-660C-A56A-C8A5CEBA407D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="truck_model" id="EC204CF8-DE17-48F9-129D-9FF222D01FFA">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-25 15:14:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Truck model]]></commentInRDBMS>
+<ownerDesignName>ca_logical</ownerDesignName>
+<engineerTo>
+<item key="A1269F0B-D7E2-660C-A56A-C8A5CEBA407D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="truck_year" id="96200630-9C11-9D58-85BA-FE90BBF578AF">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-25 15:14:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Truck year]]></commentInRDBMS>
+<ownerDesignName>ca_logical</ownerDesignName>
+<engineerTo>
+<item key="A1269F0B-D7E2-660C-A56A-C8A5CEBA407D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0E5A97BD-C3B1-B204-57FD-D6D8E3FB86D5" name="TRUCK PK">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-25 15:15:24 UTC</createdTime>
+<ownerDesignName>ca_logical</ownerDesignName>
+<engineerTo>
+<item key="A1269F0B-D7E2-660C-A56A-C8A5CEBA407D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>95D21FCC-EA31-AA5A-4A31-7D878C877E4B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

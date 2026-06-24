@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D44B29A7-CDD6-58DE-68D0-C7920930BF29" name="PROPERTY">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<generatorID>3C0BAC99-16FF-91DB-95A2-2618F8BECA60</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="auth_name" id="60593121-BF83-BE0B-35D9-1D3867CB4299">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Authority name]]></commentInRDBMS>
+<generatorID>07283B84-5B8E-765F-DF05-041E50618AB6</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1CCF3938-CE08-DF90-7536-7E90169403D3" referredColumn="B9A46191-C37C-8F39-8523-A5AA6D999873"/>
+</associations>
+</Column>
+<Column name="street_id" id="564E0E78-2ABB-4C8C-0061-72720BDABE30">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Street ID]]></commentInRDBMS>
+<generatorID>77C44256-F752-9321-DE8C-F7B48FF70D4C</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1CCF3938-CE08-DF90-7536-7E90169403D3" referredColumn="E829608A-2FDD-1D1C-CF5C-99BA4F0A3C42"/>
+</associations>
+</Column>
+<Column name="prop_street_num" id="6424AACB-106B-3D66-9C74-8CC7E3A242FA">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Property street number]]></commentInRDBMS>
+<generatorID>5C7DE785-A0A3-A21D-7F2D-699B31528ECB</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prop_id" id="D8FACBC1-3249-0431-1773-F7A2F2621FFE">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Act as a surrogate key]]></commentInRDBMS>
+<generatorID>C7AB2382-8FAE-2994-56D4-A52FC7653676</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AC977B33-96EF-97D7-D65F-D0D375383D8A" name="PROPERTY_PK">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<generatorID>D37FF3C3-C969-B23B-8DAE-3373273FFC46</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D8FACBC1-3249-0431-1773-F7A2F2621FFE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3EA1ED47-6C2C-E0E7-8D0D-79A25CB978CD" name="STREET_PROP_NK">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<generatorID>9770037E-694D-3214-12D6-9941416405B8</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="60593121-BF83-BE0B-35D9-1D3867CB4299"/>
+<colUsage columnID="564E0E78-2ABB-4C8C-0061-72720BDABE30"/>
+<colUsage columnID="6424AACB-106B-3D66-9C74-8CC7E3A242FA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C97D48E9-A3F2-007A-32D5-4E6BBE5630E9" name="street_prop_fk">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<generatorID>B877B912-E976-B030-ED7F-74A99E034715</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="564E0E78-2ABB-4C8C-0061-72720BDABE30"/>
+<colUsage columnID="60593121-BF83-BE0B-35D9-1D3867CB4299"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

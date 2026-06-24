@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E6E809B5-170D-674D-350C-A66E507E5043" name="BIN_TYPE">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-25 13:27:54 UTC</createdTime>
+<ownerDesignName>ca_logical</ownerDesignName>
+<engineerTo>
+<item key="A1269F0B-D7E2-660C-A56A-C8A5CEBA407D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="waste_type_id" id="46F68C4B-3952-D324-D2AB-F5A508DC0CFB">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-25 13:33:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Waste type ID]]></commentInRDBMS>
+<generatorID>70111952-EC70-4D2E-B951-DAFE717B1FCF</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<engineerTo>
+<item key="A1269F0B-D7E2-660C-A56A-C8A5CEBA407D" value="true"/>
+</engineerTo>
+<referedAttribute>7EC47774-1A20-7C1F-2EE7-A77520B18111</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bin_size" id="E6D6C744-1175-6A69-82FD-A4BD028E2759">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-25 13:28:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Bin size in litre]]></commentInRDBMS>
+<ownerDesignName>ca_logical</ownerDesignName>
+<engineerTo>
+<item key="A1269F0B-D7E2-660C-A56A-C8A5CEBA407D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bin_supply_cost" id="585C31C2-DEB0-0C8F-D755-E6A9AD0EDCD2">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-25 13:29:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Bin supply cost]]></commentInRDBMS>
+<ownerDesignName>ca_logical</ownerDesignName>
+<engineerTo>
+<item key="A1269F0B-D7E2-660C-A56A-C8A5CEBA407D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="97C17209-D8EE-992B-3C59-FC6D6FEAAA50" name="BIN_TYPE PK">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-25 13:28:28 UTC</createdTime>
+<ownerDesignName>ca_logical</ownerDesignName>
+<engineerTo>
+<item key="A1269F0B-D7E2-660C-A56A-C8A5CEBA407D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E6D6C744-1175-6A69-82FD-A4BD028E2759</attributeRef>
+<attributeRef>46F68C4B-3952-D324-D2AB-F5A508DC0CFB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

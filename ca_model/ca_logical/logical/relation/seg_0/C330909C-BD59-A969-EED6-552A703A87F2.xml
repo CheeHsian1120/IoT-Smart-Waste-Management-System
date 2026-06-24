@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="contract_contractwaste_fk" directorySegmentName="seg_0" id="C330909C-BD59-A969-EED6-552A703A87F2">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-25 13:20:03 UTC</createdTime>
+<ownerDesignName>ca_logical</ownerDesignName>
+<engineerTo>
+<item key="A1269F0B-D7E2-660C-A56A-C8A5CEBA407D" value="true"/>
+</engineerTo>
+<sourcePk>1ACE2F7E-494D-276E-320F-DB5927D4EEC5</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>records</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>AD56D025-8A91-D940-3ED8-1C13F51D5686</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>4DB93EC8-91B0-2DE3-C6CE-B6C8CD11A944</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

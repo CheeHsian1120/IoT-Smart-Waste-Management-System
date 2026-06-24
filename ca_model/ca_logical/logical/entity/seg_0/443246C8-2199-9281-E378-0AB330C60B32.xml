@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="443246C8-2199-9281-E378-0AB330C60B32" name="COLL_RUN">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-25 15:23:09 UTC</createdTime>
+<ownerDesignName>ca_logical</ownerDesignName>
+<engineerTo>
+<item key="A1269F0B-D7E2-660C-A56A-C8A5CEBA407D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="collrun_id" id="54242770-0200-9299-0591-E9D50BE8777B">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-25 15:50:43 UTC</createdTime>
+<ownerDesignName>ca_logical</ownerDesignName>
+<engineerTo>
+<item key="A1269F0B-D7E2-660C-A56A-C8A5CEBA407D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="collrun_date" id="078D7A7E-C768-CB55-27A0-42AD254C79A2">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-25 15:23:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date of collection]]></commentInRDBMS>
+<ownerDesignName>ca_logical</ownerDesignName>
+<engineerTo>
+<item key="A1269F0B-D7E2-660C-A56A-C8A5CEBA407D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="truck_vin" id="4F3007CC-71FF-9B17-B249-F1B08FF221DC">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-25 15:34:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[Truck Vehicle Idenfication Number, 0-9, A-Z in uppercase exlucde I, O, Q]]></commentInRDBMS>
+<generatorID>FA2B5E43-FD4E-75CD-C9E2-49D36F754055</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<engineerTo>
+<item key="A1269F0B-D7E2-660C-A56A-C8A5CEBA407D" value="true"/>
+</engineerTo>
+<referedAttribute>95D21FCC-EA31-AA5A-4A31-7D878C877E4B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>17</dataTypeSize>
+<ownDataTypeParameters>17,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cw_num" id="08406B79-9848-B61B-1B24-797A7BF702B1">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-26 13:38:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Contract waste number
+]]></commentInRDBMS>
+<generatorID>22946DDF-671E-F690-B0E9-FA5701CCBB72</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<engineerTo>
+<item key="A1269F0B-D7E2-660C-A56A-C8A5CEBA407D" value="true"/>
+</engineerTo>
+<referedAttribute>03AADB12-8BB5-BCFA-5B1E-6BFE7C1EB5EA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8E43337C-94D7-E4BC-E895-33836EF982B0" name="COLL_RUN PK">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-25 15:23:46 UTC</createdTime>
+<ownerDesignName>ca_logical</ownerDesignName>
+<engineerTo>
+<item key="A1269F0B-D7E2-660C-A56A-C8A5CEBA407D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>54242770-0200-9299-0591-E9D50BE8777B</newElementsIDs>
+<usedAttributes>
+<attributeRef>54242770-0200-9299-0591-E9D50BE8777B</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="B2A4FBCA-2513-6B55-C542-2AAFF0D61B5C" name="COLLRUN_NK">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-25 15:51:14 UTC</createdTime>
+<ownerDesignName>ca_logical</ownerDesignName>
+<engineerTo>
+<item key="A1269F0B-D7E2-660C-A56A-C8A5CEBA407D" value="true"/>
+</engineerTo>
+<newElementsIDs>078D7A7E-C768-CB55-27A0-42AD254C79A2,22946DDF-671E-F690-B0E9-FA5701CCBB72</newElementsIDs>
+<usedAttributes>
+<attributeRef>078D7A7E-C768-CB55-27A0-42AD254C79A2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

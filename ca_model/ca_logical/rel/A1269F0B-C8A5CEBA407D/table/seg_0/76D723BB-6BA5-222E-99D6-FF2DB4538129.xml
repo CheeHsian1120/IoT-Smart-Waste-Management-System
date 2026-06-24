@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="76D723BB-6BA5-222E-99D6-FF2DB4538129" name="COLLECTION">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<generatorID>A2008C11-A01D-7358-52AD-279AC20ACF75</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="bin_rfid" id="61BE7E2F-77B9-8D97-9E22-118FA8CDDC56">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Bin RFID tag]]></commentInRDBMS>
+<generatorID>513B8353-D07B-E0FC-994D-019E1FF3DC4D</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>24</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F79249C6-5418-F20B-46AC-8FC01F73AF11" referredColumn="4E4A18A8-CAC0-11B6-A77F-915141BBFE15"/>
+</associations>
+</Column>
+<Column name="collrun_id" id="C929B483-2D37-410E-D86D-24BB18281D94">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<generatorID>1EEEBE48-38B2-F170-3F72-17748C1FB2CD</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A36CDFC1-8D58-68CB-5BF9-EA494B947B4F" referredColumn="3AF511D5-CF57-06D4-ED4D-A8D4292F6A39"/>
+</associations>
+</Column>
+<Column name="bs_collected_kgs" id="09F770B0-85D7-BCE6-A44D-011BEBF3154A">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Collected kgs of a bin]]></commentInRDBMS>
+<generatorID>FBD081B4-38B4-FE47-FF09-582255723D19</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bs_overweight" id="5A733C85-438F-6DD2-A7D7-8FCD6BE1E303">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Is overweight of a bin (Y=Overweight, N=Not overweight)]]></commentInRDBMS>
+<generatorID>6137A6C9-ED14-5A5C-23E1-D6A465A796E4</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="N" description="Not overweight"/>
+<valueDef value="Y" description="Overweight"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="58EB9397-9DD8-3205-33E0-60448C3D366C" name="COLLECTION_PK">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<generatorID>1B93B77F-B364-43EA-C495-6C5C3D0C7D0C</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="61BE7E2F-77B9-8D97-9E22-118FA8CDDC56"/>
+<colUsage columnID="C929B483-2D37-410E-D86D-24BB18281D94"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5C902249-E803-5C5E-7DF5-1B1F64433A1B" name="bin_collection_fk">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<generatorID>A24F155A-D9D5-4F62-5B4E-A9ED0C66BB48</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="61BE7E2F-77B9-8D97-9E22-118FA8CDDC56"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="69B3566F-03D9-F7BE-C460-7A404DA629F5" name="collrun_collection_fk">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<generatorID>62FC33D3-AAAD-63FF-2E4A-74936452D8FE</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C929B483-2D37-410E-D86D-24BB18281D94"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

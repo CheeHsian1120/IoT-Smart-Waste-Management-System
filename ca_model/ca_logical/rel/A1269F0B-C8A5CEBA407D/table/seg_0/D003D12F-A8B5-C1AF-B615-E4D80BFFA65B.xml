@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D003D12F-A8B5-C1AF-B615-E4D80BFFA65B" name="CONTRACT_BIN">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<generatorID>A5249DEE-6EE9-0087-AC23-291CAF75A7C3</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cb_num" id="9A587AFB-A2E9-37D1-3C1A-6D60C6F8593A">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Contract bin number]]></commentInRDBMS>
+<generatorID>AC32A526-7A5A-C298-B2F7-4AA924A8CE0A</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cw_num" id="6C4737BF-B3F5-864A-F23A-B2259B017E19">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Contract waste number
+]]></commentInRDBMS>
+<generatorID>66191A48-E7F2-570B-0DEB-05970B044A9E</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6B1573F1-2AC6-5500-D58D-B4E716FB31C7" referredColumn="B64B5C0C-F865-5CFC-55C7-E9DB5F10210A"/>
+</associations>
+</Column>
+<Column name="bin_size" id="E1486EC5-6857-869C-9788-0C8E2FEFFC82">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Bin size in litre]]></commentInRDBMS>
+<generatorID>4015CF37-0800-D3D5-6933-B0658743EB82</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BDEED230-319E-7993-9E62-C8C8686868F4" referredColumn="93A4B35C-6DD9-F1C1-B22C-3C2D9AA3255F"/>
+</associations>
+</Column>
+<Column name="waste_type_id" id="5C57AECA-18CC-1C89-BE2A-0E1F8B3FCD08">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Waste type ID]]></commentInRDBMS>
+<generatorID>D7F31785-6D6A-E784-20A0-29FE84AC8265</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BDEED230-319E-7993-9E62-C8C8686868F4" referredColumn="28328FCF-7265-E72A-9E5D-BD4BB8C4B405"/>
+</associations>
+</Column>
+<Column name="cb_supply_cost" id="01082D1D-5B59-2F32-91E4-EA52C3546425">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Contract bin suppy cost]]></commentInRDBMS>
+<generatorID>42A199D2-EDD8-DA5E-A4FF-FC21218F2782</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="874C65C4-AA44-60F6-CD24-0264539742C2" name="CONTRACT_BIN_PK">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<generatorID>8866D279-D61C-4445-658C-7E6A7862E7D5</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9A587AFB-A2E9-37D1-3C1A-6D60C6F8593A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0127ECF8-7E58-F0FE-B169-A2AA21BB60DB" name="CONTRACT_BIN_NKv1">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<generatorID>E7AD35B3-1D38-25B1-1C79-78B22AD496BA</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6C4737BF-B3F5-864A-F23A-B2259B017E19"/>
+<colUsage columnID="E1486EC5-6857-869C-9788-0C8E2FEFFC82"/>
+<colUsage columnID="5C57AECA-18CC-1C89-BE2A-0E1F8B3FCD08"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1B7E8F33-CE86-E1B8-7376-BE2EB1BB9498" name="bintype_contractbin_fk">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<generatorID>12D37A3D-C1A1-92A4-FB9E-9D6B379FF936</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E1486EC5-6857-869C-9788-0C8E2FEFFC82"/>
+<colUsage columnID="5C57AECA-18CC-1C89-BE2A-0E1F8B3FCD08"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="03D3FCC4-B4C9-6FFD-223C-6979E09229E6" name="contractwaste_contractbin_fk">
+<createdBy>chtay</createdBy>
+<createdTime>2026-04-27 06:58:12 UTC</createdTime>
+<generatorID>E7A3FA1A-F3AB-747B-F2E2-316DC027105A</generatorID>
+<ownerDesignName>ca_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6C4737BF-B3F5-864A-F23A-B2259B017E19"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
