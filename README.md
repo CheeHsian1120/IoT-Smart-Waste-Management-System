@@ -17,12 +17,10 @@ The system tracks RFID-enabled smart wheelie bins, manages municipal waste colle
 
 ## 📊 Database Architecture Visualization
 ### 1. Conceptual Model (ERD)
-`![Conceptual Model](link_to_ca_conceptual.png)` 
-*(Upload your `ca_conceptual.pdf` as an image and link it here)*
+![Conceptual Model](ca_conceptual.png)
 
 ### 2. Logical Model
-`![Logical Model](link_to_ca_logical.png)`
-*(Upload your `ca_logical.pdf` as an image and link it here)*
+![Logical Model](ca_logical.png)
 
 ## 📁 Repository Structure
 * `ca_conceptual.pdf` - The foundational Entity-Relationship Diagram outlining business entities and cardinalities.
